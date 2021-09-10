@@ -11,8 +11,9 @@ body {
 }
 
 .page-layout {
-    max-width: 1120px;
-    overflow-x: hidden;
+    position: center;
+    overflow-x: auto;
+    overflow-y: hidden;
     font-family: "TT Lakes", sans-serif;
 }
 
@@ -179,6 +180,7 @@ body {
 }
 
 .mine__headline::before {
+    content: "";
     width: 4px;
     height: 40px;
     content: "";
