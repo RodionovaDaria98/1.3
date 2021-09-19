@@ -30,6 +30,7 @@ body {
 
 }
 
+
 @media (min-width: 1120px) {
     .header {
         display: none;
@@ -66,6 +67,7 @@ body {
     left: 186px;
     display: block;
 }
+
 
 @media (min-width: 769px) {
     .header__icon:first-child::after {
@@ -190,11 +192,7 @@ body {
 }
 
 
-.menu__link:first-child {
-    background-color: white;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-}
+
 
 @media (max-width: 1119px) {
     .option__menu {
@@ -219,10 +217,10 @@ body {
 
 @media (min-width: 1120px) {
     .option__menu {
-        width: 1120px;
-        height: 90px;
-        overflow-x: hidden;
-        margin: 24px 24px 0 24px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        overflow: visible;
+        flex-basis: 1200px;
     }
     .menu {
         display: flex;
@@ -236,11 +234,17 @@ body {
 }
 
 .menu__link {
-    border: none;
-    background-color: #f8f8f8;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 10px 16px;
     color: #7E7E82;
-    height: 40px;
-    cursor: pointer;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    border: 2px solid transparent;
 }
 
 .menu__link:hover {
@@ -255,27 +259,28 @@ body {
     border-radius: 6px;
 }
 
-.menu__link--device {
+.menu__link--device:hover {
     flex: 0 0 254px;
 }
 
-.menu__link--service {
+.menu__link--service:hover {
     flex: 0 0 211px;
 }
 
-.menu__link--price {
+.menu__link--price:hover
+{
     flex: 0 0 152px;
 }
 
-.menu__link--address {
+.menu__link--address:hover {
     flex: 0 0 233px;
 }
 
-.menu__link--sprice {
+.menu__link--sprice:hover {
     flex: 0 0 191px;
 }
 
-.menu__link--response {
+.menu__link--response:hover {
     flex: 0 0 95px;
 }
 
