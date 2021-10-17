@@ -42,7 +42,7 @@ html {
     border: none;
     border-radius: 50%;
     background-color: #FF3E79;
-
+    margin-right: 16px;
     cursor: pointer;
 }
 
