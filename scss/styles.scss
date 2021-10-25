@@ -1,0 +1,254 @@
+@import '_fonts';
+@import '_vars';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  opacity: 0;
+}
+
+.header {
+  box-shadow: 0 1px $shadow-color;
+  background-color: #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+  }
+  &__burger-logo {
+    display: flex;
+    align-items: center;
+  }
+  &__burger {
+    background-image: url(../img/burger.svg);
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+  &__divider {
+    display: block;
+    width: 2px;
+    height: 32px;
+    margin: 0 20px;
+    background: $divider-color;
+    border-radius: 1px;
+  }
+}
+
+.logo-img {
+  display: block;
+  width: 96px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.repair-button {
+  background-image: url(../img/repair.svg);
+}
+.checkstatus-button {
+  background-image: url(../img/checkstatus.svg);
+}
+
+.hide-divider {
+  display: none;
+}
+
+.action-buttons {
+  display: none;
+  &__call {
+    background-image: url(../img/call.svg);
+  }
+  &__chat {
+    background-image: url(../img/chat.svg);
+  }
+  &__profile {
+    background-image: url(../img/profile.svg);
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $btn-color;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.title {
+  &__text {
+    position: relative;
+    font-family: TT Lakes;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
+  &__text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $highlight-color;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+.main__buttons {
+  display: none;
+}
+
+.main {
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-right: 34px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+  }
+  &__button-text {
+    margin-right: 8px;
+  }
+}
+
+.slide-menu {
+  &__inner {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-left: 16px;
+  }
+  &__list {
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+
+  &__list::-webkit-scrollbar {
+    display: none;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 40px;
+    letter-spacing: -0.2px;
+    &--active {
+      list-style: none;
+      background: #fff;
+      border: 2px solid $btn-border-color;
+      border-radius: 6px;
+    }
+  }
+  &__link {
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 500;
+    color: $btn-text-color;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+.fade {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 24px;
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  &__about-text {
+    margin: 0;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    &--sm {
+      margin-top: 0;
+    }
+    &--md {
+      display: none;
+    }
+    &--lg {
+      display: none;
+    }
+  }
+  &__show-more {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+  }
+  &__show-more::before {
+    content: url(../img/expand.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  &__about-image {
+    display: block;
+    height: 100%;
+  }
+}
+
+@import '_media';

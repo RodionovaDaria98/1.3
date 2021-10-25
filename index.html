@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__burger-logo">
+          <button class="header__burger button" type="button">Меню</button>
+          <span class="header__divider hide-divider"></span>
+          <a class="logo" href="#">
+            <img class="logo-img" src="img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header__buttons">
+          <div class="action-buttons">
+            <button class="action-buttons__call button" type="button">
+              Позвонить
+            </button>
+            <button class="action-buttons__chat button" type="button">
+              Чат
+            </button>
+            <button class="action-buttons__profile button" type="button">
+              Профиль
+            </button>
+          </div>
+          <span class="header__divider"></span>
+          <button class="repair-button button" type="button">
+            Оставить заявку
+          </button>
+          <button class="checkstatus-button button" type="button">
+            Статус ремонта
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__header">
+        <div class="main__title title">
+          <h1 class="title__text">Услуги и сервисы</h1>
+        </div>
+        <div class="main__buttons">
+          <span class="main__button"
+            ><span class="main__button-text">Оставить заявку</span>
+            <button class="repair-button button" type="button">
+              Оставить заявку
+            </button>
+          </span>
+          <span class="main__button">
+            <span class="main__button-text">Статус ремонта</span>
+            <button class="checkstatus-button button" type="button">
+              Статус ремонта
+            </button>
+          </span>
+        </div>
+      </div>
+      <nav class="slide-menu">
+        <div class="slide-menu__inner">
+          <ul class="slide-menu__list">
+            <li class="slide-menu__item slide-menu__item--active">
+              <a href="#" class="slide-menu__link">Ремонтируемые устройства</a>
+            </li>
+            <li class="slide-menu__item">
+              <a href="#" class="slide-menu__link">Дополнительные услуги</a>
+            </li>
+            <li class="slide-menu__item">
+              <a href="#" class="slide-menu__link">Цены на услуги</a>
+            </li>
+            <li class="slide-menu__item">
+              <a href="#" class="slide-menu__link">Адреса сервисных центров</a>
+            </li>
+            <li class="slide-menu__item">
+              <a href="#" class="slide-menu__link">Специальные цены</a>
+            </li>
+            <li class="slide-menu__item">
+              <a href="#" class="slide-menu__link">Отзывы</a>
+            </li>
+            <span class="fade"></span>
+          </ul>
+        </div>
+      </nav>
+      <section class="main__content content">
+        <div class="content__about-text">
+          <p class="content__about-text--sm">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <div>
+            <span class="content__about-text--md"
+              >Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера<span class="content__about-text--lg"
+                >, что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.</span
+              ></span
+            >
+            <button class="content__show-more" type="button">
+              Читать далее
+            </button>
+          </div>
+        </div>
+        <img class="content__about-image" src="img/content-img.jpg" alt="" />
+      </section>
+    </main>
+  </body>
+</html>
